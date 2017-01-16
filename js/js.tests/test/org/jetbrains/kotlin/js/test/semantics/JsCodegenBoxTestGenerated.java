@@ -8115,6 +8115,12 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
             doTest(fileName);
         }
 
+        @TestMetadata("kt13312.kt")
+        public void testKt13312() throws Exception {
+            String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/extensionFunctions/kt13312.kt");
+            doTest(fileName);
+        }
+
         @TestMetadata("kt1776.kt")
         public void testKt1776() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/extensionFunctions/kt1776.kt");
@@ -8148,13 +8154,7 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
         @TestMetadata("kt3646.kt")
         public void testKt3646() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/extensionFunctions/kt3646.kt");
-            try {
-                doTest(fileName);
-            }
-            catch (Throwable ignore) {
-                return;
-            }
-            throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive for that.");
+            doTest(fileName);
         }
 
         @TestMetadata("kt3969.kt")
@@ -8954,13 +8954,7 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
             @TestMetadata("castFunctionToExtension.kt")
             public void testCastFunctionToExtension() throws Exception {
                 String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/functions/invoke/castFunctionToExtension.kt");
-                try {
-                    doTest(fileName);
-                }
-                catch (Throwable ignore) {
-                    return;
-                }
-                throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive for that.");
+                doTest(fileName);
             }
 
             @TestMetadata("extensionInvokeOnExpr.kt")
@@ -9161,13 +9155,7 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
             @TestMetadata("kt4989.kt")
             public void testKt4989() throws Exception {
                 String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/functions/localFunctions/kt4989.kt");
-                try {
-                    doTest(fileName);
-                }
-                catch (Throwable ignore) {
-                    return;
-                }
-                throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive for that.");
+                doTest(fileName);
             }
 
             @TestMetadata("localExtensionOnNullableParameter.kt")
@@ -12645,13 +12633,7 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
         @TestMetadata("kt4987.kt")
         public void testKt4987() throws Exception {
             String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/operatorConventions/kt4987.kt");
-            try {
-                doTest(fileName);
-            }
-            catch (Throwable ignore) {
-                return;
-            }
-            throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive for that.");
+            doTest(fileName);
         }
 
         @TestMetadata("nestedMaps.kt")
@@ -16595,13 +16577,7 @@ public class JsCodegenBoxTestGenerated extends AbstractJsCodegenBoxTest {
             @TestMetadata("functionFromStdlib.kt")
             public void testFunctionFromStdlib() throws Exception {
                 String fileName = KotlinTestUtils.navigationMetadata("compiler/testData/codegen/box/reflection/functions/functionFromStdlib.kt");
-                try {
-                    doTest(fileName);
-                }
-                catch (Throwable ignore) {
-                    return;
-                }
-                throw new AssertionError("Looks like this test can be unmuted. Remove IGNORE_BACKEND directive for that.");
+                doTest(fileName);
             }
 
             @TestMetadata("functionReferenceErasedToKFunction.kt")
